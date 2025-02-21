@@ -19,4 +19,12 @@ app.get("/details", (req, res, next) => {
   res.status(200).json(details);
 });
 
+app.get("/country", (req, res, next) => {
+  const details = {
+    city: "Paradise",
+    family: "David",
+  };
+  res.status(200).json(details);
+});
+
 module.exports = app;
